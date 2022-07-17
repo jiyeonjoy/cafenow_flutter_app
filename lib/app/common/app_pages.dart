@@ -1,7 +1,10 @@
 import 'package:cafenow_flutter_app/app/root/binding/root_page_binding.dart';
 import 'package:cafenow_flutter_app/app/root/ui/root_page.dart';
+//
 import 'package:cafenow_flutter_app/app/splash/binding/splash_page_binding.dart';
 import 'package:cafenow_flutter_app/app/splash/ui/splash_page.dart';
+import 'package:cafenow_flutter_app/app/home/binding/home_page_binding.dart';
+import 'package:cafenow_flutter_app/app/home/ui/home_page.dart';
 import 'package:get/get.dart';
 
 part 'app_routes.dart';
@@ -21,6 +24,14 @@ abstract class AppPages {
       page: () => const RootPage(),
       bindings: [
         RootPageBinding(),
+      ],
+      transition: Transition.fadeIn,
+    ),
+      GetPage(
+      name: AppRoutes.homePage,
+      page: () => const HomePage(),
+      bindings: [
+        HomePageBinding(),
       ],
       transition: Transition.fadeIn,
     ),
