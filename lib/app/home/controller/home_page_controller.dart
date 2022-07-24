@@ -18,13 +18,11 @@ class HomePageController extends GetxController {
   void getPosition() async {
     try {
       position = await LocationUtils.determinePosition();
+      update();
       if (position == null) {
         CommonSnackBar.show(R.string.needLocationPermission);
-
         return;
       }
-
-
     } catch (e) {
       logger.d(e);
     }
