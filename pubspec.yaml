@@ -22,6 +22,9 @@ dependencies:
   # location
   geolocator: ^9.0.1
 
+  # logging
+  logger: ^1.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
