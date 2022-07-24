@@ -7,13 +7,18 @@ class HomePage extends GetView<HomePageController> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.purple,
-      child: const Center(
-        child: Text(
-          'Home Page',
-        ),
-      ),
+    return GetBuilder<HomePageController>(
+      init: controller,
+      builder: (_) {
+        return Container(
+          color: Colors.purple,
+          child: const Center(
+            child: Text(
+              'Home Page',
+            ),
+          ),
+        );
+      },
     );
   }
 }
