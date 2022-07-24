@@ -19,6 +19,9 @@ dependencies:
   webview_flutter: ^3.0.1
   url_launcher: ^6.1.0
 
+  # location
+  geolocator: ^9.0.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

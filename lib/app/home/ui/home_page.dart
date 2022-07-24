@@ -7,9 +7,9 @@ class HomePage extends GetView<HomePageController> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.purple,
-      body: Center(
+    return Container(
+      color: Colors.purple,
+      child: const Center(
         child: Text(
           'Home Page',
         ),

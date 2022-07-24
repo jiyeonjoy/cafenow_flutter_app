@@ -7,9 +7,9 @@ class MyPage extends GetView<MyPageController> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.amber,
-      body: Center(
+    return Container(
+      color: Colors.amber,
+      child: const Center(
         child: Text(
           'My Page',
         ),
