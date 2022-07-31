@@ -1,0 +1,1 @@
+const KAKAO_MAP_KEY = '73a07523f45aa0fb288ad2c806ade123';

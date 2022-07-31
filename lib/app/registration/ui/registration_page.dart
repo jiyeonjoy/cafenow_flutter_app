@@ -7,9 +7,9 @@ class RegistrationPage extends GetView<RegistrationPageController> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Colors.green,
-      body: Center(
+    return Container(
+      color: Colors.green,
+      child: const Center(
         child: Text(
           'Registration Page',
         ),
